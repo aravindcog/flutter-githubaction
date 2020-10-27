@@ -8,5 +8,6 @@ workflows:
         scripts:
             - flutter packages pub get
             - flutter test --coverage
+            - flutter analyze --write=analyzer-output.txt
         artifacts:
             - coverage/lcov.info
