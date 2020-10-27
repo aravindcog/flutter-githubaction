@@ -7,7 +7,7 @@ workflows:
             flutter: dev
         scripts:
             - flutter packages pub get
-            - flutter test --coverage && genhtml coverage/lcov.info --output=coverage
+            - flutter test --coverage
             - flutter analyze --write=analyzer-output.txt
         artifacts:
             - coverage/lcov.info
